@@ -1,4 +1,4 @@
-"tip.label"	"BioProject"	"host_std"	"type_std"	"locale_std"	"year_std"	"yrmnth_std"	"serovar"	"species"
+"genome"	"BioProject"	"host_std"	"type_std"	"locale_std"	"year_std"	"yrmnth_std"	"serovar"	"species"
 "SRR10298819"	"SRR10298819"	"PRJNA481328"	"dog"	"colon"	"USA:IN"	2019	"2019-04"	"Enteritidis"	" enterica (subspecies I)"
 "SRR10512520"	"SRR10512520"	"PRJNA481328"	"dog"	"feces"	"USA:IL"	2019	"2019-01"	"Hartford"	" enterica (subspecies I)"
 "SRR10963169"	"SRR10963169"	"PRJNA324575"	"dog"	"feces"	"USA:KY"	2019	"2019-05"	"Norwich"	" enterica (subspecies I)"
