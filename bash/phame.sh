@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # --- MODIFY PATHS ---
-OUT=/path/to/output
+DIR=/path/to/phame.ctl #will also be path to where output is written
 PHAME=/path/to/phame_env/PhaME/src
 
 cd ${DIR}

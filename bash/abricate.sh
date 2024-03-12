@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # --- MODIFY PATHS ---
-RAWDIR=/path/to/rawreads
+CONTIGS=/path/to/assemb
 AMR=/path/to/abricate-amr
 
 conda activate abricate # activate conda env

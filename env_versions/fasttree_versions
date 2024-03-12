@@ -1,0 +1,8 @@
+# packages in environment at /storage/work/smk459/conda_envs/FT_env:
+#
+# Name                    Version                   Build  Channel
+_libgcc_mutex             0.1                 conda_forge    conda-forge
+_openmp_mutex             4.5                       2_gnu    conda-forge
+fasttree                  2.1.11               h031d066_2    bioconda
+libgcc-ng                 13.2.0               h807b86a_0    conda-forge
+libgomp                   13.2.0               h807b86a_0    conda-forge

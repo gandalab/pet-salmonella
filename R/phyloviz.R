@@ -8,7 +8,7 @@ library(ggnewscale)
 
 # ---- load phame output tree and ID meta ----
 tree <- ape::read.tree(file = "trees/dog-allsnps_fastree")
-meta <- read.delim("tables/meta.txt")
+meta <- read.delim("tables/sampmeta.txt")
 
 tree$tip.label<- str_replace(tree$tip.label, "_contig", "") #drop file extension
 

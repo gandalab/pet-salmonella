@@ -9,7 +9,7 @@ library(reshape2)
 # ---- read in raw output and metadata ----
 amr <- read.delim("tables/abricateout/amr_summary.txt")
 vf <- read.delim("tables/abricateout/vf_summary.txt")
-met <- read.delim("tables/meta.txt", sep = "\t")
+met <- read.delim("tables/sampmeta.txt", sep = "\t")
 
 # ---- clean formatting ----
 
@@ -48,7 +48,7 @@ colnames(amrmelt) <- c("genome", "Gene", "P_A")
 amrmelt <- merge(amrmelt, met, by = "genome")
 
 #add AMR gene database info
-geneinfo <- read.csv("tables/megares_full_annotations_v2.00.csv")
+geneinfo <- read.csv("tables/abricate_dbmeta/megares_full_annotations_v2.00.csv")
 colnames(geneinfo)[2:5] <- c("Broadclass", "Class", "Mechanism", "Gene") #fix names 
 
 #correct differences in punctuation
@@ -70,7 +70,7 @@ vfmelt <- merge(vfmelt, met, by = "genome")
 
 
 #add VF gene database info
-vfinfo <- read.csv("tables/vfdb_annotated.csv")
+vfinfo <- read.csv("tables/abricate_dbmeta/vfdb_annotated.csv")
 
 #correct differences in punctuation
 vfinfo$Gene <- str_replace_all(vfinfo$Gene, "\\/", "\\.")
