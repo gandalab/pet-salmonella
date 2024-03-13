@@ -28,7 +28,7 @@ p2 <- gheatmap(p, meta %>%
          colnames = FALSE, legend_title = "Host") +
   scale_fill_manual(values = c(
     dog = "#BFD3E6",
-    human = "#8C96C6"
+    human = "#1D438A" # color changed following reviewer feedback
   ), name = "Host", labels = c("Dog", "Human")) +
   theme(plot.title = element_text(hjust = 0.5))+
   theme(legend.position = "bottom") +
