@@ -9,7 +9,7 @@ library(gtsummary)
 library(gt)
 
 # ----- Load Tables -----
-met <- read.delim("tables/meta.txt", sep = "\t")
+met <- read.delim("tables/sampmeta.txt", sep = "\t")
 amr <- read.delim("tables/amr_combined.txt", sep = "\t")
 vf <- read.delim("tables/vf_combined.txt", sep = "\t") 
 
@@ -27,7 +27,7 @@ tab1 <- met %>%
                 locale_std ~ "Location (State)",
                 year_std ~ "Collection Year"),
               statistic = all_categorical() ~ "{n}") %>%
-  add_overall() %>%
+  add_overall(last=TRUE) %>%
   bold_labels() %>%
   as_gt() %>%
   gt::tab_options(table.font.names = "Times New Roman")
@@ -40,11 +40,10 @@ tab2 <- met %>%
                 serovar ~ "Serotype",
                 species ~ "Species"),
               statistic = all_categorical() ~ "{n}") %>%
-  add_overall() %>%
+  add_overall(last=TRUE) %>%
   bold_labels() %>%
   as_gt() %>%
   gt::tab_options(table.font.names = "Times New Roman")
-
 
 tab3 <- amr %>%
   filter(P_A != 0)%>%
